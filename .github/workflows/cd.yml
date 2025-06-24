@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 24
       - run: npm ci
-      - run: npm run release
-        env:
+      - env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+        run: npm run release
