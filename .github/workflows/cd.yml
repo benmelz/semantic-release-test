@@ -16,7 +16,10 @@ jobs:
         with:
           node-version: 24
       - run: npm ci
+      - run: echo "env token is $GITHUB_TOKEN"
+      - run: echo "app token is ${{ steps.generate-token.outputs.token }}"
+      - run: echo "actions token is ${{ secrets.GITHUB_TOKEN }}"
       - env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
-        run: npm run release
+        run: echo "release token is $GITHUB_TOKEN" && npm run release
