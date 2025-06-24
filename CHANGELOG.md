@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/benmelz/semantic-release-test/compare/v1.0.1...v1.0.2) (2025-06-24)
+
+
+### Bug Fixes
+
+* just use github token ([#11](https://github.com/benmelz/semantic-release-test/issues/11)) ([e0ce239](https://github.com/benmelz/semantic-release-test/commit/e0ce2399c964f9f9a727b3dea301c4aade76bd98))
+
 ## [1.0.1](https://github.com/benmelz/semantic-release-test/compare/v1.0.0...v1.0.1) (2025-06-24)
 
 
